@@ -338,7 +338,11 @@ div[role="progressbar"] {
 	width: 95%;
 	margin-bottom: 20px;
 }
-
+.gallery p{
+	font-size: 15px;
+	line-height: 25px;
+}
+	
 /*CONTACT US SECTION*/
 .contact form {
 	width: 66%;
