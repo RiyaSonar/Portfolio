@@ -7,17 +7,19 @@
 	font-family: Roboto, sans-serif, arial;
 }
 html, body 
-{
+	{
 	font-size: 14px;
 	font-weight: 400;
-	background: #202020;
+	background: #719df6;
 	color: #fff;
 }
 .container {
 	width: 1100px;
 	margin: 0px auto;
-	display: table;
+	display:table;
 }
+
+
 .width-33 {
 	width: 33%;
 	float: left;
@@ -42,7 +44,7 @@ html, body
 }
 
 .span-col {
-	color: #ffbf35;
+	color: #f9b217;
 }
 
 nav {
@@ -60,7 +62,7 @@ nav a {
 }
 
 a:hover{
-    color: #ffbf35;
+    color: #f9b217;
 } 
 
 .hover-line::after{
@@ -68,11 +70,15 @@ a:hover{
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #ffbf35;
+    background-color: #f9b217;
     transition: width .3;
 }
 /*****Main BANNER*****/
 .width-50 {
+	float: left;
+	width: 50%;
+}
+.width-60 {
 	float: left;
 	width: 50%;
 }
@@ -99,8 +105,8 @@ a:hover{
 	margin-top: 20px;
 	border-radius: 50%;
 	text-align: center;
-	border: 2px solid #ffbf35;
-	color: #ffbf35;
+	border: 2px solid #f9b217;
+	color: #f9b217;
 	margin-left: 10px;
 	height: 50px;
 	width: 50px;
@@ -108,9 +114,9 @@ a:hover{
 }
 /*****Main BANNER IMAGE*****/
 .main-panel img {
-	margin-top: 10%;
-	width: 100%;
-	margin-left: 10%;
+	margin-top: 25%;
+	width: 50%;
+	margin-left: 30%;
 }
 
 /*ABOUT US SECTION*/
@@ -132,12 +138,13 @@ a:hover{
 	font-size: 30px;
 	text-align: center;
 	margin-bottom: 50px;
-	color: #ffbf35;
+	color: #f9b217;
 }
-.about-img {
-	width: 100%;
+.width-60 .about-img {
+	width: 110%;
 	padding: 0px 180px;
-	margin-top: 50px;
+	margin-top: 0px;
+	float: right;
 }
 .about-us {
 	width: 100%;
@@ -178,13 +185,13 @@ table td {
 }
 
 .skill div span {
-	background: #ffbf35;
+	background: #f9b217;
 	height: 5px;
 	float: left;
 }
 
 div[role="progressbar"] {
-	color: #ffbf35;
+	color: #f9b217;
 	margin-left: 100px;
 	margin-bottom: 20px;
 	width: 100px;
@@ -197,14 +204,14 @@ div[role="progressbar"] {
 	display: grid;
 
 	--pgPercentage: var(--value);
-	background: radial-gradient(closest-side, black 80%, transparent 0 99.9%, black 0),
-		conic-gradient(#ffbf35 calc(var(--pgPercentage) * 1%), #ffe6af 0);
+	background: radial-gradient(closest-side, #719df6 80%, transparent 0 99.9%, #719df6 0),
+		conic-gradient(#f9b217 calc(var(--pgPercentage) * 1%), #f9b217 0);
 
 }
 
 /*****EXPERIENCE SECTION*****/
 .bg-lightgrey {
-	background-color: #1a1a1a;
+	background-color: #719df6;
 }
 .edu-exp {
 	padding: 10px 0px;
@@ -217,7 +224,7 @@ div[role="progressbar"] {
 	width: 100%;
 	float: left;
 	padding: 30px 10px;
-	background: #262626;
+	background: #6283a5;
 	margin-bottom: 20px;
 }
 .experience-content {
@@ -232,7 +239,7 @@ div[role="progressbar"] {
 	font-size: 20px;
 }
 .experience-content h3 {
-	color: #ffbf35;
+	color: #f9b217;
 	font-weight: 500;
 	margin-bottom: 2px;
 	font-size: 17px;
@@ -243,17 +250,18 @@ div[role="progressbar"] {
 
 /*SERVICE SECTION*/
 .service-list {
-	padding: 40px;
+	padding: 30px;
 	margin-top: 35px;
-	background: #262626;
+	background: #6283a5;
 	border-radius: 15px;
-	width: 94%;
+	width: 80%;
 	float: left;
+	margin-left: 45px;
 }
 
 .service-list i {
 	font-size: 50px;
-	color: #ffbf35;
+	color: #f9b217;
 	width: 70px;
 	float: left;
 }
@@ -269,64 +277,6 @@ div[role="progressbar"] {
 	line-height: 25px;
 }
 
-/*****TESTIMONIAL SECTION*****/
-.testimonial {
-	width: 32%;
-	float: left;
-	margin-right: 1%;
-	margin-top: 50px;
-}
-
-.testimonial-content {
-	background: #262626;
-	color: #cfcfcf;
-	width: 100%;
-	float: left;
-	padding: 0px 20px 20px 20px;
-	font-size: 16px;
-	line-height: 28px;
-	position: relative;
-	text-align: center
-}
-
-.testimonial i {
-	color: #ffbf35;
-	font-size: 35px;
-	margin-top: 60px;
-}
-
-.testimonial-img {
-	width: 100%;
-	float: left;
-	text-align: center;
-	position: absolute;
-	left: 0px;
-    right: 20px;
-	top: -65px;
-}
-
-.testimonial-img img {
-	width: 80px;
-	height: 80px;
-	border: 3px solid white;
-	border-radius: 50%;
-}
-
-.testimonial-name {
-	width: 100%;
-	float: left;
-}
-
-.testimonial-name h5 {
-	color: #ffbf35;
-	font-size: 20px;
-	margin-top: 10px;
-}
-
-.testimonial-name p {
-	font-size: 16px;
-}
-
 /*PORTFOLIO SECTION*/
 .gallery {
 	width: 100%;
@@ -335,7 +285,7 @@ div[role="progressbar"] {
 }
 .gallery img {
 	height: auto;
-	width: 95%;
+	width: 90%;
 	margin-bottom: 20px;
 }
 .gallery a{
@@ -348,12 +298,13 @@ div[role="progressbar"] {
 	display: inline-block;
 	padding: 10px 18px;
 	transition: .4s ease;
-	margin-left: 40px;
+	margin-left: 106px;
+	
 	}
 .gallery a:hover{
-	background: #ffbf35; 
+	background: #f9b217; 
 }
-	
+
 /*CONTACT US SECTION*/
 .contact form {
 	width: 66%;
@@ -377,7 +328,7 @@ textarea {
 	margin-bottom: 20px;
 	height: 40px;
 	padding: 10px;
-	background: #ffbf35;
+	background: #f9b217;
 	color: #fff;
 	border: none;
 	font-size: 16px;
@@ -386,7 +337,7 @@ textarea {
 	font-size: 26px;
 	text-align: center;
 	margin-top: 60px;
-	color: #ffbf35;
+	color: #f9b217;
 }
 .contact h4 {
 	font-size: 22px;
